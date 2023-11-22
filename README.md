@@ -1,3 +1,5 @@
-# Fullstack Authentication Example with Next.js and NextAuth.js
+# To start the server
+Type <code>npm run dev</code> in the terminal.
 
-This is the starter project for the fullstack tutorial with Next.js and Prisma. You can find the final version of this project in the [`final`](https://github.com/prisma/blogr-nextjs-prisma/tree/final) branch of this repo.
+# To start the Prisma database
+Open a new terminal and type <code>npx prisma studio</code>
