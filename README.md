@@ -1,5 +1,5 @@
 # To start the server
-Type <command>npm run dev</command> in the terminal.
+Type <code>npm run dev</code> in the terminal.
 
 # To start the Prisma database
-Open a new terminal and type <command>npx prisma studio</command>
+Open a new terminal and type <code>npx prisma studio</code>
