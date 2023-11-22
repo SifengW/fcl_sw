@@ -2,7 +2,8 @@
 FROM node:21 AS BUILD_IMAGE
 WORKDIR /myapp
 COPY package*.json ./
-RUN npm ci
+RUN npm install
+RUN npx prisma generate
 COPY . .
 RUN npm run build
 
@@ -12,6 +13,7 @@ FROM node:21 AS PRODUCTION_STAGE
 WORKDIR /myapp
 COPY --from=BUILD_IMAGE /myapp/package*.json ./
 COPY --from=BUILD_IMAGE /myapp/.next ./.next
+COPY --from=BUILD_IMAGE /myapp/pages /myapp/pages/api
 COPY --from=BUILD_IMAGE /myapp/node_modules ./node_modules
 ENV NODE_ENV=production
 EXPOSE 3000

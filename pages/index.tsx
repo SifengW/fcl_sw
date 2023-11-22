@@ -84,7 +84,7 @@ const HomePage: React.FC = () => {
             <option value={'model2'}>Model 2</option>
             <option value={'model3'}>Model 3</option>
           </select>
-          <select id='dropdown' name="level" value={formData.level} onChange={handleChange}>
+          <select id='dropdown' name="level" value={formData.level} onChange={handleChange} required>
             <option value={''} selected disabled hidden>License Level</option>
               <option value={0}>0</option>
               <option value={1}>1</option>

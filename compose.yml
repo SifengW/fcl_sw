@@ -1,15 +1,27 @@
-version: '3.1'
-
+version: '3'
 services:
-
-  db:
-    image: postgres
+  postgres:
+    image: postgres:latest
     restart: always
+    container_name: postgres
     environment:
+      POSTGRES_DB: mydatabase
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: Aa123456
-
-  adminer:
-    image: adminer
-    restart: always
     ports:
-      - 5433:5433
+      - "5433:5432"
+
+  fcl_sw:
+    image: fcl_sw:latest
+    restart: always
+    container_name: myContainer
+    depends_on:
+      - postgres
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgres://postgres:Aa123456@localhost:5433/mydatabase
+    ports:
+      - "3000:3000"
+    build:
+      context: .
+      dockerfile: Dockerfile
