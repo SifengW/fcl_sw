@@ -19,7 +19,7 @@ services:
       - postgres
     environment:
       NODE_ENV: production
-      DATABASE_URL: postgres://postgres:Aa123456@localhost:5433/mydatabase
+      DATABASE_URL: postgres://postgres:Aa123456@postgres:5432/mydatabase?connect_timeout=300
     ports:
       - "3000:3000"
     build:
