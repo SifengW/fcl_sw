@@ -8,8 +8,8 @@ Batch form
 ![Screenshot 2024-09-04 170331](https://github.com/user-attachments/assets/d734f8e3-824a-41c7-931d-dee645ef42f0)
 Local PostgreSQL database in pgAdmin 4
 
-![Screenshot 2024-09-04 170331](https://github.com/user-attachments/assets/f43ee0ea-4baa-4c2a-b9f3-0d4d593b1932)
-Database server in Docker contaienr
+![Screenshot 2024-09-04 231358](https://github.com/user-attachments/assets/b6bd84af-4ed7-44fe-9917-6077ea98c9b5)
+Database server in Docker container
 
 
 ## Getting Started
