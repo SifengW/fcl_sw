@@ -5,12 +5,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Screenshots
 
 Batch form
+
 ![Screenshot 2024-09-04 165459](https://github.com/user-attachments/assets/fb3e3e5d-9c8e-46a5-bb5a-b0b7f58ce6f0)
 
 Local PostgreSQL database in pgAdmin 4
+
 ![Screenshot 2024-09-04 170331](https://github.com/user-attachments/assets/d734f8e3-824a-41c7-931d-dee645ef42f0)
 
 Database server in Docker container
+
 ![Screenshot 2024-09-04 231358](https://github.com/user-attachments/assets/b6bd84af-4ed7-44fe-9917-6077ea98c9b5)
 
 
